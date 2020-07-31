@@ -1,0 +1,522 @@
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "pipe";	
+
+}
+@font-face{
+	font-family: "pipe";
+	src: url("../font/Caos.otf")
+	
+}
+@font-face{
+	font-family: "LINE";
+	src: url("../font/Gotham-Medium.otf")
+}
+#outer{
+	width: 1280px;
+	height: 2000px;
+	margin: 0 auto;
+}
+.header{
+	width: 1280px;
+	height: 80px;
+	background: black;
+	position: fixed;
+	transition: 0.2px;
+	top:0;
+	-webkit-transition: all 0.4s ease-in-out;
+  	-moz-transition: all 0.4s ease-in-out ;
+	z-index: 999;
+	
+}
+.header .logo{
+	width: 65px;
+	height: 50px;
+	padding: 10px;
+	float: left;
+	border-right: 1px solid #000000;
+	margin-top: 5px;
+	 
+}
+.header .logo a img{
+	width: 60px;
+	margin-top: -3px;
+	margin-left: 3px;
+	-webkit-transform:scale(1);
+	transform:scale(1);	
+	}
+.header .logo img:hover{
+	-webkit-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+	-webkit-transform:scale(1.3);
+	transform:scale(1.3);
+}
+.middle{
+	width:860px;
+	height: calc(100% - 40px);
+/*	background-color: red;*/
+	float: left;
+	padding: 20px;
+}
+
+.middle ul li{
+	float: left;
+	list-style: none;
+	margin-top: 15px;
+	margin-left: 70px;
+	width: 70px;
+	height: 50px;
+/*	background-color: black;*/
+	text-align: center;
+}
+.middle ul li a{
+	text-decoration: none;
+	color: white;
+	font-family: pipe;
+	font-size: 13px;
+	border-bottom: 4px solid transparent;
+}
+.middle ul li .menu:hover{
+	border-bottom:  solid white;
+}
+.middle ul li a:hover, .dropdown:hover .dropbtn {
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+.dropdown .dropbtn {
+	font-size: 15px;  
+	border: none;
+	outline: none;
+	color: white;
+	background-color: inherit;
+	font-family: pipe;
+	font-weight: bolder;
+	margin: 0;
+}
+.dropdown-content {
+	width: 210px;
+	height: 430px;
+	display: none;
+	position: absolute;
+	background-color: black;
+	border-radius: 10px;
+	min-width: 160px;
+	margin-top: 60px;
+	z-index: 1;
+	margin-left: -5px;
+	margin-left: 10px;
+}
+.dropdown-content a {
+	width:210px;
+	height: 50px;
+	color: black;
+	text-decoration: none;
+	display: block;
+	margin-right: 50px;
+	border-bottom: 3px solid transparent;
+	margin-left: -70px
+}
+.dropdown-content a:hover{
+	border-bottom: 3px solid white;
+} 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.content-right{
+	width: 280px;
+	height: 80px;
+/*	background: #ED1316;*/
+	float: right; 
+}
+.icon{
+	width: 15px;
+	margin: 32px;
+	margin-left: 40px;
+}
+.PS{
+	float:right;
+}
+.PS a{
+	text-decoration: none;
+}
+.PS #book{
+	width: 100px;
+	height: 30px;
+	background: white;
+	float: right;
+	margin-right: 10px;
+	text-align: center;
+	font-family: pipe;
+	font-weight: bolder;
+	font-size: 12px;
+	margin-top: 25px;
+	line-height: 30px;
+	border-radius: 3px;	
+	color: black;
+}
+.PS #sign{
+	width: 70px;
+	height: 30px;
+/*	background: #16BAFF;*/
+	float: right;
+	margin-right: 10px;
+	text-align: center;
+	font-family: line;
+	font-weight: bolder;
+	font-size: 12px;
+	margin-top: 25px;
+	line-height: 30px;
+	color: white;
+	border: none;
+	background: none;
+}
+.PS #sign a {
+	text-decoration: none;
+	color: white;
+}
+.PS #sign a:hover{
+	color: #FFFFFF;
+	text-shadow: 0 0 10px #FFFFFF;
+}
+.content{
+	width: 1180px;
+	height: 1608px;
+	background: grey;
+	float: left;	
+	padding: 50px;
+	
+}
+.content .border{
+	width: 1090px;
+	height: 610px;
+	z-index: 5;
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 43px;
+	border: 1px solid whitesmoke;
+
+}
+.content .logoGran .border2{
+	width: 160px;
+	height: 60px;
+	z-index: 10;
+	position: absolute;
+	border: 1px solid whitesmoke;
+	float: left;
+	margin-left: 526px;
+	margin-top: 396px;
+	display: block;
+	
+}
+.content .logoGran .background{
+	width: 1280px;
+	height: 680px;
+	background-image: url("../img/877952.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	float:left;
+	margin-left: -50px;
+	position: absolute;
+	z-index: 0;
+}
+.content .border-effect:hover .border2{
+	border-color: white;
+}
+.content .logoGran img{
+	margin-left: 350px ;
+	margin-top: 100px;
+	z-index: 5;
+	position: absolute;
+	width: 500px;
+}
+.content .logoGran #booking{
+	z-index: 55;
+	position: absolute;
+	width: 150px;
+	height: 50px;
+	background-color: whitesmoke;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 400px;
+	margin-left: 530px;
+	border: 3px solid whitesmoke;
+	border-radius: 3%; 
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+}
+.team{
+	width: 96.5%;
+	height: 400px;
+	background-image: url("../img/100628455_2632869187033745_1795304374201745408_o.jpg");
+	opacity: 4;
+	background-repeat: no-repeat;
+	float: left;
+	margin-top: 680px;
+	border: 1px solid whitesmoke;
+	padding: 20px;
+	padding-top: 100px;
+}
+.text {
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	border: 3px solid whitesmoke;
+	float: left;
+	font-family: LINE;
+	line-height: 50px;
+	font-size: 40px;
+	margin-top: -80px;
+	text-transform: uppercase;
+	background: whitesmoke;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.gameup a {
+	width: 145px;
+	height: 305px;
+	background-color: transparent;
+	float: left;
+	margin-left: 50px;
+	border: 3px solid white;
+	-webkit-box-shadow: 0 7px 4px #777;
+	-moz-box-shadow: 0 7px 4px #777;
+	box-shadow: 0 7px 4px #777;
+}
+.gameup figure a img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+.gameup figure:hover a img {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.image{
+	opacity: 1;
+	display: block;
+	width: 15%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	float: left;
+	margin-left: 15px
+}
+.gameup .image:hover {
+	opacity: 1s;
+}
+.name{
+	color: whitesmoke;
+	float: left;
+	width: 100px;
+	background: #5DDFDD;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	height: 30px;
+	margin-top: 360px;
+	margin-left: -140px;
+	font-family: LINE;
+	font-size: 20px;
+	padding-left: 35px;
+	line-height: 20px;
+}
+.name .name-char{
+	text-align: left;
+	
+}
+#imge{
+	width: 100%;
+	height: 480px;
+}
+#imge div img{
+	width: 100%;
+	height: 480px;
+	clear: both ;
+	float: left;
+}
+#imge div #boxs{
+	width: 460px;
+	height: 210px;
+	background-color: hsla(0,0%,0%,0.56);
+	float: left;
+	z-index: 100;
+	position: absolute;
+	margin-top: 1350px;
+	margin-left: 400px;	
+	padding: 10px;
+}
+#imge div #boxs h1{
+	text-align: center;
+	margin-left: 130px;
+	float: left;
+	z-index: 101;
+	position: absolute;
+	font-size: 25px;
+	color: #fff;
+}
+#imge div #boxs h2{
+	text-align: center;
+	margin-left: 170px;
+	margin-top: 80px;
+	float: left;
+	color: white;
+	z-index: 101;
+	position: absolute;
+	font-size: 20px;
+}
+.buttonclick{
+	width: 100%;
+	height: 30px;
+	margin-top: 140px;
+}
+.buttonclick a{
+	float: left;
+	width: 45%;
+	height: 30px;
+	margin-left: 18px;
+	background-color: whitesmoke;
+	text-align: center;
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 30px;
+	color: black;
+	font-weight: bolder;
+	border-radius: 20px;
+	border: 0px solid whitesmoke;	
+}
+.buttonclick a{
+	background: whitesmoke;
+}
+.buttonclick a:hover{
+	background: #5DDFDD;
+}
+.footer{
+	width: 1180px;
+	height: 500px;
+	background-color: black;
+	float: left;
+	color: white;
+	padding: 50px;
+}
+.footer ul{
+	list-style: none;
+	
+}
+.outer-box{
+	width: 1000px;
+	height: 30px;
+	margin-left: 150px;
+}
+.footer .box{
+	width: 250px;
+	height: 20px;
+	float: left;
+}
+.footer ul li{
+	width: 250px;
+	height: 20px;
+/*	background: #FF9395;*/
+	float: left;
+}
+.footer ul li a{
+	text-decoration: none;
+	color: whitesmoke;
+	margin-left: 20px;
+	font-size: 15px;
+	font-family: LINE;	
+}
+.footer ul li a:hover{
+	color: #65E4DA;
+}
+#OuterBox{
+	width: 150px;
+	height: 200px;
+	float: left;
+	padding: 25px;
+	margin-top: 20px;
+	margin-left: 500px;
+}
+#OuterBox #logobox {
+	width: 150px;
+	height: 150px;
+/*	background-color: #FF9B9D;*/
+	float: left;
+}
+#OuterBox #logobox img{
+	width: 150px;
+	
+}
+#OuterBox #iconbox{	
+	width: 150px;
+	height: 50px;
+	float: left;	
+}
+#OuterBox #iconbox button{
+	border: none;
+	width: 28px;
+	height: 27px; 
+	padding: 1px;
+	margin-top: 20px;
+	margin-left: 5px;
+	border-radius: 10%;
+	border-color: whitesmoke;
+}
+#iconbox button #facebook{
+	width: 10px;
+	height: auto ;
+	float: left;
+	margin-left: 8px;
+
+}
+#iconbox button #youtube{
+	width: 25px;
+	height: auto ;
+	float: left;
+	margin-left: 0.5px;
+}
+#iconbox button #twitt{
+	width: 22px;
+	height: auto ;
+	float: left;
+	margin-left: 3px;
+}
+#iconbox button #instagram{
+	width: 25px;
+	height: auto ;
+	float: left;
+}
+#iconbox button:hover{
+	background-color: #65E4DA;
+	border-radius: 10%;
+}
+#parag{
+	width: 500px;
+	height:80px;
+	float: left;
+	text-align: center;
+	font-size: 12px;
+	margin-left: 350px;
+	font-family: LINE;
+	color: whitesmoke;
+}
+#prag-end{
+	float: left;
+	width: 500px;
+	font-family: LINE;
+	margin-left: 500px;
+	font-size: 12px;
+}
+#prag-end a{
+	color: whitesmoke;
+	margin-left: 20px;
+	text-decoration: none;
+}
+/* CSS Document */
+
